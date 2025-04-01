@@ -103,7 +103,7 @@ export default function HomeContent() {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
                 {[
-                  { title: "SFCC Consulting", desc: <ul className="text-[#2D3748] list-disc list-inside text-left text-sm md:text-base"><li>Front-end SFRA guidance</li><li>UI/UX refinement</li><li>Light back-end support</li></ul>, icon: <FaBuilding className="text-3xl md:text-4xl text-[#2A4EFF]" /> },
+                  { title: "SFCC Consulting", desc: <ul className="text-[#2D3748] list-disc list-inside text-left text-sm md:text-base"><li>Frontend SFRA guidance</li><li>UI/UX refinement</li><li>Backend Development</li></ul>, icon: <FaBuilding className="text-3xl md:text-4xl text-[#2A4EFF]" /> },
                   { title: "API Integrations", desc: <ul className="text-[#2D3748] list-disc list-inside text-left text-sm md:text-base"><li>OCAPI front-end links</li><li>Payment & data APIs</li><li>Streamlined workflows</li></ul>, icon: <FaLink className="text-3xl md:text-4xl text-[#2A4EFF]" /> },
                   { title: "PWA Optimization", desc: <ul className="text-[#2D3748] list-disc list-inside text-left text-sm md:text-base"><li>React-based PWAs</li><li>Mobile-first design</li><li>SFCC integration</li></ul>, icon: <FaMobileAlt className="text-3xl md:text-4xl text-[#2A4EFF]" /> },
                 ].map((service, index) => (
