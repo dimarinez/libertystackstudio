@@ -190,7 +190,7 @@ export default function HomeContent() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="relative py-12 md:py-24 text-center" style={{ background: '#1A1F2B', background: 'linear-gradient(to bottom right, #1A1F2B, #2A4EFF)' }}>
+        <section id="contact" className="relative py-12 md:py-24 text-center" style={{ background: 'linear-gradient(to bottom right, #1A1F2B, #2A4EFF)' }}>
           <motion.h2
             className="text-4xl md:text-5xl font-bold text-[#E2E8F0] mb-8 md:mb-12"
             initial={{ opacity: 0 }}
