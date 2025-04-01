@@ -6,6 +6,7 @@ import Script from "next/script";
 import { AnimatePresence, motion } from "framer-motion";
 import "./globals.css";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "700"] });
@@ -171,9 +172,11 @@ export default function RootLayout({
         </AnimatePresence>
 
         <footer className="bg-blue-900 text-white py-6 text-center relative">
-          <p>© 2025 LibertyStackStudio. All rights reserved.</p>
-          <p className="text-sm mt-2">
-            Certified Salesforce B2C Commerce Developer (Credential ID: 2712679)
+          <p className="pb-2">© 2025 LibertyStackStudio. All rights reserved.</p>
+          <p className="text-sm mt-2 flex justify-center gap-3">
+            <Image alt="B2C Certificiation" width={100} height={100} src="/B2C-Commerce-Developer.png" />
+            <Image alt="AI Certificiation" width={100} height={100} src="/ai-associate.png" />
+            <Image alt="Data Cloud Certificiation" width={100} height={100} src="/datacloudconsultant.png" />
           </p>
         </footer>
       </body>
