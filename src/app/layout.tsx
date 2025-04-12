@@ -52,6 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="fo-verify" content="7186da18-fde4-4e6f-ae95-348ed09f848f" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
         <Script
           id="gtag-base"
