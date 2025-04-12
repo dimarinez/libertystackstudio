@@ -49,14 +49,6 @@ export default function HomeContent() {
           </video>
           
           <div className="z-10 px-4 relative">
-            <motion.h4
-              className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-6 tracking-tight"
-              initial={{ y: -100 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-            >
-              Made in the USA
-            </motion.h4>
             <motion.h1
               className="text-4xl sm:text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight"
               initial={{ y: -100 }}
