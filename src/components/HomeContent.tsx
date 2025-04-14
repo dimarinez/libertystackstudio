@@ -31,7 +31,7 @@ export default function HomeContent() {
         {/* Hero Section with Video Background */}
         <motion.section
           id="home"
-          className="min-h-screen bg-gradient-to-br from-[#2A4EFF] to-[#7B61FF] flex items-center justify-center text-center relative"
+          className="min-h-screen bg-gradient-to-br from-[#2A4EFF] to-[#7B61FF] flex items-center justify-start text-left relative"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -47,27 +47,35 @@ export default function HomeContent() {
             <source src="/videos/hero-vid.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          
-          <div className="z-10 px-4 relative">
+
+          <div className="z-10 px-4 sm:px-8 md:px-16 w-full">
             <motion.h1
-              className="text-4xl sm:text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight"
-              initial={{ y: -100 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight"
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.3 }}
             >
               LibertyStack<span className="text-[#FF6B6B]">Studio</span>
             </motion.h1>
             <motion.p
-              className="text-lg sm:text-xl md:text-2xl text-[#E2E8F0] max-w-3xl mx-auto"
-              initial={{ y: 100 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              className="text-lg sm:text-xl md:text-2xl text-[#E2E8F0] max-w-2xl mb-8"
+              initial={{ y: 50 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0.05 }}
             >
               Crafting cutting-edge ecommerce & mobile experiences.
             </motion.p>
+            <motion.a
+              href="#services"
+              className="inline-block bg-[#FF6B6B] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#FF8787] transition-colors duration-300"
+              initial={{ y: 50 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0.125 }}
+            >
+              Learn More
+            </motion.a>
           </div>
         </motion.section>
-
         {/* Services Section */}
         <section id="services" className="py-12 md:py-24 bg-[#F7F9FC] relative">
           <motion.h2
